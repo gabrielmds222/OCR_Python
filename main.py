@@ -7,6 +7,6 @@ image = cv2.imread('.\images\print_vaga.png')
 tesseractPath = r"C:\Program Files\Tesseract-OCR"
 pytesseract.pytesseract.tesseract_cmd = tesseractPath + r"\tesseract.exe"
 
-text = pytesseract.image_to_string(image)
+text = pytesseract.image_to_string(image, lang="por")
 
 print(text)
